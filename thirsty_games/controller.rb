@@ -1,7 +1,7 @@
 require_relative 'db/config'
 require_relative 'app/models/game'
 require_relative 'app/models/player'
-require_relative 'app/models/player_games'
+require_relative 'app/models/player_game'
 require_relative 'app/view'
 
 class Controller
@@ -73,6 +73,6 @@ class Controller
   end
 end
 
-app = Controller.new
-app.welcome
-app.new_session
+# app = Controller.new
+# app.welcome
+# app.new_session
