@@ -1,4 +1,4 @@
-require_relative '../app/models/games'
+require_relative '../app/models/game'
 
 GAMES_DATA = ['scrabble', 'connect_4','twister', 'monopoly',
               'mastermind', 'risk', 'drunken_brawling']

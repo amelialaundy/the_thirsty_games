@@ -1,6 +1,6 @@
 require_relative '../app/models/player'
 
-PLAYER_DATA = ['Adam','Amelia','Grace','Linton','Dan',
+PLAYER_DATA = ['Adam','Amelia','Grace','Linden','Dan',
                 'Jess','Juliet','Karen','Steve']
 
 module PlayersImporter
