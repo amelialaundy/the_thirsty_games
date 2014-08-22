@@ -88,7 +88,4 @@ class Controller
   end
 end
 
- # app = Controller.new
- # p app.person_score(1)
-
 

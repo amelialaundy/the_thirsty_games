@@ -18,7 +18,7 @@ class View
   def self.options
     puts "-"*30
     puts "What would you like to do?"
-    sleep(1)
+    # sleep(1)
     puts "Please type a number that corresponds to an action"
     puts "\t<1> Show a list of players "
     puts "\t<2> Show a list of games"
