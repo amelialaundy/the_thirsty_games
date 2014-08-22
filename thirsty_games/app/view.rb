@@ -33,6 +33,10 @@ class View
     puts "Please type game ID number"
   end
 
+  def self.ask_for_player_id
+    puts "Please type player ID number"
+  end
+
   def self.option_invalid
     puts "DOES NOT COMPUTE"
   end
@@ -40,6 +44,11 @@ class View
   def self.exit
     "Exiting program"
   end
+
+  def self.show_person_score(arg)
+    puts arg
+  end
+
 
 
 end

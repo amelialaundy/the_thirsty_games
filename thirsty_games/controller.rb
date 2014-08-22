@@ -1,7 +1,7 @@
 require_relative 'db/config'
 require_relative 'app/models/game'
 require_relative 'app/models/player'
-require_relative 'app/models/player_games'
+require_relative 'app/models/player_game'
 require_relative 'app/view'
 
 class Controller
@@ -20,7 +20,22 @@ class Controller
     View.ask_for_game_id
   end
 
+  def ask_for_player_id
+    View.ask_for_player_id
+  end
 
+  def get_players_and_scores_for_chosen_game(game_id)
+    g=Game.find(game_id)
+    g.players_and_scores
+  end
+
+  def one_player_total_score(player_id)
+    View.show_person_score(person_score(player_id))
+  end
+
+  def exit
+    View.exit
+  end
 
 #################################################
   def show_player_list
@@ -51,7 +66,7 @@ class Controller
 
   def person_score(person_id)
     #returns the player name and score for a single Player
-    player = Player.find(person_id)
+    p = Player.find(person_id)
     [p.name,p.total_scores]
   end
 
@@ -73,6 +88,7 @@ class Controller
   end
 end
 
-app = Controller.new
-app.welcome
-app.new_session
+ # app = Controller.new
+ # p app.person_score(1)
+
+
