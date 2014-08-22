@@ -43,6 +43,11 @@ task "db:rollback" do
   ActiveRecord::Rollback
 end
 
+desc 'Start IRB with application environment loaded'
+task "console" do
+  exec "irb -r./db/config"
+end
+
 
 desc "Run the specs"
 RSpec::Core::RakeTask.new(:specs)
