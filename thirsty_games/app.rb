@@ -32,7 +32,10 @@ class App
       game_id = gets.chomp!
       @my_controller.get_players_and_scores_for_chosen_game(game_id)
     when "4"
-      @my_controller.one_player_total_score
+      @my_controller.ask_for_player_id
+      player_id = gets.chomp!
+      @my_controller.one_player_total_score(player_id)
+
     when "5"
       @my_controller.all_players_total_score
     when "6"
