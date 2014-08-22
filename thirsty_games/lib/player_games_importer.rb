@@ -6,7 +6,7 @@ module PlayerGamesImporter
     Game.all.each do |game|
       Player.all.each do |player|
 
-        PlayerGames.create!(player_id: player.id, game_id: game.id, game_score: rand(100))
+        PlayerGame.create!(player_id: player.id, game_id: game.id, game_score: rand(100))
       end
     end
   end
