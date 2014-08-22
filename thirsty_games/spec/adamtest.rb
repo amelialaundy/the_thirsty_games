@@ -39,8 +39,8 @@ def top_3_players
 end
 
 # pp game_list
-# pp player_list
-pp person_score(1)
+ pp player_list
+# pp person_score(1)
 #  pp all_players_scores
 #  pp order_all_players_scores
 #  pp top_3_players

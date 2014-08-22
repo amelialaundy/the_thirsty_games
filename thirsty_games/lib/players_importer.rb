@@ -1,7 +1,7 @@
 require_relative '../app/models/player'
 
 PLAYER_DATA = ['Adam','Amelia','Grace','Linden','Dan',
-                'Jess','Juliet','Karen','Steve']
+                'Jess','Juliet','Karen','Steve', 'Jaime','Sam', 'Darcy','Richard','Jasmin','Josh','Rohan']
 
 module PlayersImporter
   def self.import
