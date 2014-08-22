@@ -5,4 +5,8 @@ class Player < ActiveRecord::Base
   has_many :games, through: :player_games
   has_many :player_games
 
+  def total_scores
+    # player_games.inject(0) {|total, player_game| total += player_game.game_score}
+    player_games.sum(:game_score)
+  end
 end
