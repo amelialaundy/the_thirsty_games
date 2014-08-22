@@ -1,4 +1,4 @@
-require_relative '../app/models/player_games'
+require_relative '../app/models/player_game'
 
 
 module PlayerGamesImporter
