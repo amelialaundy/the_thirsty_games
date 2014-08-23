@@ -26,6 +26,7 @@ class View
     puts "\t<4> Display a player's score across all games"
     puts "\t<5> Display all player's total scores"
     puts "\t<6> Display leaderboard"
+    puts "\t<7> Play a game"
     puts "\t<exit> Exits program"
   end
 
@@ -45,10 +46,29 @@ class View
     "Exiting program"
   end
 
+  def self.all_players_scores(name_score_array)
+    puts " #{name_score_array[0]}'s current total score is #{name_score_array[1]}"
+  end
+
   def self.show_person_score(arg)
     puts arg
   end
 
+  def self.top_three_players(top_three)
+    puts top_three
+  end
+
+  def self.which_game?
+    puts "Please enter the number of the game you would like to play:"
+  end
+
+  def self.which_player?
+    puts "Please enter the number of the player you would like to be:"
+  end
+
+  def self.play_game(game_name, random_score)
+    puts "You just played #{game_name} and gained a score of: #{random_score}"
+  end
 
 
 end

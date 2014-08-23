@@ -37,9 +37,16 @@ class App
       @my_controller.one_player_total_score(player_id)
 
     when "5"
-      @my_controller.all_players_total_score
+      @my_controller.all_players_scores
     when "6"
-      @my_controller.leaderboard
+      @my_controller.top_3_players
+    when "7"
+      @my_controller.choose_player
+      player_id = gets.chomp!
+      @my_controller.choose_game
+      game_id = gets.chomp!
+      @my_controller.play_game!(player_id, game_id)
+      # @my_controller.update_players_total_score
     when "exit"
       @my_controller.exit
     else

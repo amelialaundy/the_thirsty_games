@@ -2,6 +2,7 @@ require_relative '../../db/config'
 require_relative 'game'
 
 class Player < ActiveRecord::Base
+	attr_accessor :total_score
   has_many :games, through: :player_games
   has_many :player_games
 
